@@ -145,12 +145,12 @@
 h1 {
     margin-top: 0;
     font-family: 'font2';
-    color: #d20a11;
+    color: black;
 }
 
 h2 {
     font-family: 'font2';
-    color: #d20a11;
+    color: orange;
     padding-bottom: 0;
     margin-top: 3px;
     margin-bottom: 0;

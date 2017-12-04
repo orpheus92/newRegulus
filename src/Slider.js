@@ -1,4 +1,4 @@
-class Event{
+class Slider{
 
 constructor(inputsvg){
     this.inputsvg = inputsvg;

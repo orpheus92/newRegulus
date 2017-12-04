@@ -18,7 +18,7 @@ d3.csv('data/Pu_TOT.csv', function (error, rawdata) {
             .attr("value", rawdata.columns[i])
             .text(rawdata.columns[i]);
     }
-    let plots = new Plots(rawdata, 600, 200);
+    let plots = new Crystal(rawdata, 600, 200);
     window.plots = plots;
     //Load data in JS
     pInter = 2;
@@ -27,7 +27,7 @@ d3.csv('data/Pu_TOT.csv', function (error, rawdata) {
         if (error) throw error;
         //will be updated later
         tree = new Tree();
-        loaddata = new Load();
+        loaddata = new Info();
         let[maxp,minp] = loaddata.create(data,rawdata,pInter,sizeInter);
         partition = new Partition();
         partition.initialPartition(data);
@@ -43,8 +43,8 @@ d3.csv('data/Pu_TOT.csv', function (error, rawdata) {
                     .domain([minp, maxp])
                     .range([0, 150])//size of slider and range of output, put persistence here
                     .clamp(true);
-                let event = new Event(d3.select("#treesvg"));
-                let slider = event.createslider([minp, maxp]);
+                let newslider= new Slider(d3.select("#treesvg"));
+                let slider = newslider.createslider([minp, maxp]);
 
                 slider.curslide.call(d3.drag()
                     .on("start.interrupt", function() { slider.interrupt(); })

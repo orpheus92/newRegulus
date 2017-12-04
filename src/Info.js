@@ -1,4 +1,4 @@
-class Load {
+class Info {
 
     constructor() {
         this.raw = d3.select("#raw");//.text("rawdata");

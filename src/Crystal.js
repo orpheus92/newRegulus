@@ -1,5 +1,5 @@
 //export {Plots} from './Plot';
-class Plots {
+class Crystal {
 
     constructor(data, widht, height) {
         this._rawdata = data;
