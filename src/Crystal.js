@@ -1,4 +1,4 @@
-//export {Plots} from './Plot';
+//export * from 'Crystal';
 class Crystal {
 
     constructor(data, widht, height) {

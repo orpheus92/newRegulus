@@ -1,5 +1,6 @@
 //import {Tree} from './Tree';
 //import {Plots} from './Plot';
+//import {Crystal} from './Crystal.js';
 
 //read data;
 let pInter;
