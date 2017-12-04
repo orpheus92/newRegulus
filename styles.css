@@ -1,0 +1,302 @@
+
+
+#loadData {
+    float: left;
+    text-align: left;
+    margin: 2px 10px;
+    display: inline-block;
+    width:400px;
+    height: 400px;
+
+}
+
+#treePlot {
+    text-align: left;
+    margin: 2px 10px;
+    display: inline-block;
+    left: 20px;
+    width:700px;
+    height: 400px;
+
+
+}
+
+#container
+{
+    text-align:center;
+}
+
+.d3-tip {
+    /*line-height: 5;*/
+    padding-left: 10px;
+    padding-right: 5px;
+    min-width: 250px;
+    border-style: groove;
+    /*padding: 12px;*/
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.tooltip-title{
+    font-size:18px;
+    font-family: "Arial Black";
+
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    /*box-sizing: border-box;*/
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    /*line-height: 1;*/
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+    content: "\25BC";
+    /*margin: -1px 0 0 0;*/
+    top: 100%;
+    left: 0;
+    text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+    content: "\26A0";
+    /*margin: -4px 0 0 0;*/
+    top: -800px;
+    left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+    content: "\25B2";
+    /*margin: 4px 0 1px 0;*/
+    top: -8px;
+    left: 1481px;
+    text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+    content: "\25B6";
+    /*margin: -4px 0 0 -1px;*/
+    top: 50%;
+    left: 100%;
+}
+
+.link {
+    fill: none;
+    stroke: #555;
+    stroke-opacity: 0.4;
+    stroke-width: 2px;
+}
+
+.partitiontip{
+    fill: #de2d26;
+    color: #de2d26;
+    text-anchor:end;
+}
+
+
+.node circle {
+    fill: #be2714;
+}
+
+.node text {
+    font: 14px sans-serif;
+}
+
+.winner circle {
+    fill: #364e74;
+}
+
+.loser text {
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.selected {
+    fill: #d20a11;
+}
+
+/*Map grid style*/
+.grat {
+    stroke: grey;
+    stroke-width: 1px;
+    opacity: .2;
+}
+
+@font-face {
+    font-family: 'font2';
+    /*src: url('assets/font2.ttf');*/
+}
+
+@font-face {
+    font-family: 'font1';
+    /*src: url('assets/font1.ttf');*/
+}
+
+h1 {
+    margin-top: 0;
+    font-family: 'font2';
+    color: #d20a11;
+}
+
+h2 {
+    font-family: 'font2';
+    color: #d20a11;
+    padding-bottom: 0;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+* {
+    font-family: 'font1';
+}
+
+header {
+    padding: 0.5em;
+    clear: left;
+    text-align: left;
+    height: 100px;
+}
+
+#logo {
+    float: right;
+    height: 100px;
+}
+
+
+#plot-selector {
+    float: right;
+    margin-bottom: 5px;
+
+}
+#increase {
+    float: right;
+    margin-bottom: 5px;
+}
+
+#decrease {
+    float: right;
+    margin-bottom: 5px;
+}
+
+#increaseS {
+    float: right;
+    margin-bottom: 5px;
+}
+
+#decreaseS {
+    float: right;
+    margin-bottom: 5px;
+}
+.view {
+    padding: 0.5em;
+
+}
+
+
+#details {
+    width: 200px;
+    padding: 0.5em;
+    float: left;
+
+    border-width: 1px;
+    border-color: #d9d9d9;
+    border-right-style: solid;
+}
+
+#bar-chart {
+    width: 500px;
+    margin-right: 20px;
+    float: left;
+
+}
+
+#map-view {
+    margin-left: 750px;
+    width: 910px;
+    border-width: 1px;
+    border-color: #d9d9d9;
+    border-left-style: solid;
+}
+
+
+#links > line {
+    stroke: rgb(216, 216, 216);
+}
+
+#xAxis path,
+#yAxis path {
+    fill: none;
+    stroke: black;
+}
+
+#xAxis text,
+#yAxis text {
+    font-size: 14px;
+
+}
+.scattercolor:hover {
+    fill: black;
+    stroke: black;
+}
+
+.treedis:hover {
+    fill: blue;
+    stroke: blue;
+}
+
+/* Style for sliders below */
+
+.ticks {
+    font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+    stroke-linecap: round;
+}
+#slider{
+    float: right;
+    margin-up: 5px;
+    margin-left: 20px;
+}
+
+.track {
+    stroke: #000;
+    stroke-opacity: 0.3;
+    stroke-width: 10px;
+}
+
+.track-inset {
+    stroke: #ddd;
+    stroke-width: 8px;
+}
+
+.track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    stroke: transparent;
+    cursor: crosshair;
+}
+
+.handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;
+}
